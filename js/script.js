@@ -4,6 +4,16 @@
 */
 
 'use strict'
+
+/**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit6-01-PWA/sw.js", {
+    scope: "/ICS2O-Unit6-01-PWA/",
+  })
+}
+
 /**
  * This function converts the temperature from fahrenheit to celsius.
  */
